@@ -1,0 +1,41 @@
+name: Publish beta release / 发布测试版
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build distributable Skill ZIP
+        shell: bash
+        run: |
+          mkdir -p dist
+          python - <<'PY'
+          import subprocess, zipfile
+          from pathlib import Path
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode('utf-8').split('\0')
+          target = Path('dist') / 'codex-anime-launcher-skill.zip'
+          with zipfile.ZipFile(target, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+              for name in files:
+                  if not name:
+                      continue
+                  p = Path(name)
+                  if p.is_file():
+                      z.write(p, 'codex-anime-launcher/' + name)
+          print('Packed:', target, 'files:', sum(bool(n) for n in files))
+          PY
+      - name: Create GitHub prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/codex-anime-launcher-skill.zip \
+            --title "Codex 动漫启动器 | Codex Anime Launcher ${GITHUB_REF_NAME}" \
+            --notes-file RELEASE_NOTES.md \
+            --prerelease
