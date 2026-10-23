@@ -1,0 +1,24 @@
+# Local outputs, secrets, working media
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!*.env.example
+*.log
+work/
+exports/
+input/
+assets-private/
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.mp4
+*.mov
+*.avi
+*.ico
+.DS_Store
+Thumbs.db

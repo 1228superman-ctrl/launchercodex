@@ -1,0 +1,9 @@
+{
+  "theme_name": "custom-anime-theme",
+  "subject": "User-selected licensed character or original design",
+  "visual_palette": {"background": "#0A111F", "accent": "#67CAFF", "text": "#E9F3FF"},
+  "artwork": {"first_frame": "user_supplied_or_generated.png", "wallpaper": "optional_user_owned_wallpaper.png", "icon": "optional_user_owned_icon.ico"},
+  "video": {"width": 1280, "height": 720, "fps": 24, "portrait_width": 1080, "portrait_height": 1920},
+  "start_behavior": {"show_animation": true, "play_audio": true, "launch_actual_codex_after_video": true},
+  "notes": "These are design hints, not proof of Codex native image-background support."
+}

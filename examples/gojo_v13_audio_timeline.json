@@ -1,0 +1,73 @@
+{
+  "video_duration": 22.208333,
+  "cues": {
+    "typing_end": 2.39,
+    "scroll_start": 2.39,
+    "scroll_end": 7.625,
+    "icon_start": 7.625,
+    "reveal_start": 10.625,
+    "theme_start": 19.375
+  },
+  "foley": {
+    "typing_times": [
+      0.1,
+      0.21,
+      0.31,
+      0.48,
+      0.57,
+      0.68,
+      0.77,
+      0.96,
+      1.08,
+      1.19,
+      1.28,
+      1.41,
+      1.55,
+      1.67,
+      1.76,
+      1.9,
+      2.02,
+      2.12,
+      2.22
+    ],
+    "scroll_times": [
+      4.4,
+      4.54,
+      4.67,
+      4.81,
+      4.95,
+      5.08,
+      5.2,
+      5.35,
+      5.51,
+      5.7,
+      5.85,
+      5.98,
+      6.09,
+      6.22,
+      6.35,
+      6.49,
+      6.63,
+      6.78,
+      6.93,
+      7.09,
+      7.24,
+      7.37,
+      7.49
+    ],
+    "keyboard_gain": 0.13,
+    "wheel_gain": 0.25,
+    "icon_whoosh": true,
+    "whoosh_gain": 0.04,
+    "icon_click": true,
+    "icon_click_at": 9.555,
+    "click_gain": 0.12
+  },
+  "music": {
+    "song_offset_seconds": 55,
+    "start_gain": 0.09,
+    "rise_gain": 0.65,
+    "rise_seconds": 7.35,
+    "outro_seconds": 2.833333
+  }
+}

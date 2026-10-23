@@ -1,0 +1,53 @@
+{
+  "video_duration": 12.0,
+  "cues": {
+    "typing_end": 1.4,
+    "scroll_start": 1.4,
+    "scroll_end": 3.8,
+    "icon_start": 3.8,
+    "reveal_start": 6.0,
+    "theme_start": 10.1
+  },
+  "foley": {
+    "typing_times": [
+      0.06,
+      0.19,
+      0.31,
+      0.52,
+      0.65,
+      0.81,
+      0.94,
+      1.12,
+      1.28
+    ],
+    "scroll_times": [
+      1.62,
+      1.76,
+      1.89,
+      2.05,
+      2.19,
+      2.34,
+      2.5,
+      2.67,
+      2.83,
+      3.02,
+      3.18,
+      3.35,
+      3.5
+    ],
+    "keyboard_gain": 0.13,
+    "wheel_gain": 0.2,
+    "icon_whoosh": true,
+    "whoosh_gain": 0.035,
+    "icon_click": true,
+    "icon_click_at": 5.32,
+    "click_gain": 0.09
+  },
+  "music": {
+    "song_offset_seconds": 0,
+    "start_gain": 0.09,
+    "rise_gain": 0.65,
+    "rise_seconds": 4.1,
+    "outro_seconds": 1.9
+  }
+}
